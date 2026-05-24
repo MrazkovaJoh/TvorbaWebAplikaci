@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maják slapy</title>
+    <meta name="description" content="Maják slapy - Rezervační systém">
+    <meta name="keywords" content="Kemp, Slapy, dovolená, příroda">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+         <a href="index.html"><img class="logo" src="images/logo.png"></a>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="navigation">
+            <nav class="navbar">
+                <ul>
+                    <li><a class="active" href="index.html">Úvod</a></li>
+                    <li><a href="rezervace.html">Rezervace</a></li>
+                    <li><a href="cenik.html">Ceník</a></li>
+                    <li><a href="kontakt.html">Kontakt</a>
+                    </div>
+                </ul>   
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="textbox">
+                <h1>Maják Slapy | Malý rodinný kemp</h1>
+                <h2>Ideální místo pro relaxaci a odpočinek</h2>
+        </div>
+    </div>
+    <div class="infoblok">
+        <div class="infotext">
+        <h3>V kempu je možno realizovat na co si vzpomenete ...</h3>
+        <p>Rodinné rekreace | Rodinné oslavy | Rybářské výpravy <br> 
+           Školní akce | Firemní akce | Dětské tábory</p><br><br>
+           <a class="rezervace" href="rezervace.html">Rezervovat</a>
+           </div>
+    </div>
+    <div class="okempu">
+        <div class="flexbox">
+            <p class="textLeva">
+            Malý rodinný kemp „Maják Slapy“ se rozkládá
+            na 108. vltavském říčním kilometru Slapské
+            přehrady (souřadnice 49.740421, 14.369982).
+            Je ideálním místem pro relaxaci a odpočinek, 
+            ale také pro aktivní dovolenou u nejkrásnější
+            české řeky a nedaleké přírodní rezervace
+            Drbákov-Albertovy skály.   <br><br>
+            „Maják Slapy“ najdete v rekreační oblasti Sejce, zhruba 5 km od  obce Nalžovice (viz kontakt). 
+    Možnost ubytování pro 50 osob ve 12 čtyřlůžkových chatkách (možnost přistýlky).
+    Součástí areálu je jídelna, společenská místnost, sociální zařízení, 
+    volejbalové hřiště, stolní tenis, lodě, gril a půjčovna sportovních potřeb. 
+    Areál je zhruba 50 metrů od řeky. <br><br>
+    Stejně jako je maják na moři symbolem bezpečí a klidu, tak i „Maják Slapy“ je Vaším klidným 
+    a pohodovým místem v dnešní hektické době. Přijeďte prostě „vypnout“!
+            </p>
+            <img class="obrPrava" src="images/obr1.png">
+        </div>
+    </div>
+    <div class="galerie">
+        <img src="images/gal/01.jpg">
+        <img src="images/gal/02.jpg">
+        <img src="images/gal/03.jpg">
+        <img src="images/gal/04.jpg">
+        <img src="images/gal/05.jpg">
+        <img src="images/gal/06.jpg">
+        <img src="images/gal/10.jpg">
+        <img src="images/gal/13.jpg">
+        <img src="images/gal/09.jpg">
+    </div><br>
+    <footer>
+        <div class="kon">
+            <h4>tel.: +420 721 335 423</h4>
+            <h4>e-mail: info@majakslapy.cz</h4>
+            <h4>adresa: Sejce 0143, 262 93 Nalžovice</h4><br>
+             <p>Všechna práva jsou vyhrazena &#169 Maják slapy 2025</p>
+        </div>
+    </footer>
+     <script>
+        const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.navbar ul');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+     </script>
+</body>
+</html>

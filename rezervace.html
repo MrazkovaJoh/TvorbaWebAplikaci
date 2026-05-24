@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maják slapy</title>
+    <meta name="description" content="Maják slapy - Rezervační systém">
+    <meta name="keywords" content="Kemp, Slapy, dovolená, příroda">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+         <a href="index.html"><img class="logo" src="images/logo.png"></a>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="navigation">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a class="active" href="rezervace.html">Rezervace</a></li>
+                    <li><a href="cenik.html">Ceník</a></li>
+                    <li><a href="kontakt.html">Kontakt</a>
+                    </div>
+                </ul>   
+            </nav>
+        </div>
+    </header>
+   <body id="bg">
+<div class="hero">
+    <h1>Rezervujte si pobyt na Majáku</h1>
+</div>
+
+<div class="reservation-box">
+
+<h2>1. Registrace uživatele</h2>
+<div class="section">
+<div class="form-grid">
+
+<div>
+<label>Jméno</label>
+<input type="text" id="jmeno">
+</div>
+<div>
+<label>Příjmení</label>
+<input type="text" id="prijmeni">
+</div>
+<div>
+<label>Telefon</label>
+<input type="text" id="telefon">
+</div>
+
+<div>
+<label>E-mail</label>
+<input type="email" id="email">
+</div>
+
+</div>
+</div>
+
+
+<h2>2. Termín a počet osob</h2>
+<div class="section">
+<div class="form-grid">
+
+<div>
+<label>Datum příjezdu</label>
+<input type="date" id="from">
+</div>
+
+<div>
+<label>Datum odjezdu</label>
+<input type="date" id="to">
+</div>
+
+<div>
+<label>Počet dospělých</label>
+<select id="adults">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</div>
+
+<div>
+<label>Počet dětí (do 15 let)</label>
+<select id="children">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+</div>
+<label>Počet dětí (do tří let)</label>
+<select id="children3">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+</div>
+</div>
+
+
+<h2>3. Ubytovaní</h2>
+<div class="section">
+<div id="guests"></div>
+</div>
+
+
+<h2>4. Strava</h2>
+<div class="section">
+<div class="form-grid">
+
+<div>
+<label>Typ stravy</label>
+<select id="typStravy">
+<option value="1" selected>Plná penze</option>
+<option value="2">Bez stravy</option>
+</select>
+</div>
+
+<div>
+<label>Počet dospělých</label>
+<input type="number" id="foodAdults">
+</div>
+
+<div>
+<label>Počet dětí</label>
+<input type="number" id="foodChildren">
+</div>
+
+<div>
+<label>Počet dětí do 3 let</label>
+<input type="number" id="foodChildren3">
+</div>
+</div>
+</div>
+<br>
+<h2>5. Aktivita</h2>
+<div id="aktivity-container">
+
+<div class="aktivita">
+
+<select class="aktivita-select">
+<option value="1">Kanoe</option>
+<option value="2">Šlapadlo</option>
+<option value="3">Loďka</option>
+<option value="4">Sauna</option>
+</select>
+
+<label>Počet hodin</label>
+<input type="number" class="aktivita-hodiny" value="1">
+</div>
+
+</div>
+
+<button type="button" id="pridat-aktivitu">+ Přidat aktivitu</button>
+
+<div style="margin-top:40px;">
+<button type="button" id="odeslat">Dokončit rezervaci</button>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+    <footer>
+        <div class="kon">
+            <h4>tel.: +420 721 335 423</h4>
+            <h4>e-mail: info@majakslapy.cz</h4>
+            <h4>adresa: Sejce 0143, 262 93 Nalžovice</h4><br>
+             <p>Všechna práva jsou vyhrazena &#169 Maják slapy 2025</p>
+        </div>
+    </footer>
+    <script>
+function zobrazSekci(id) {
+    document.querySelectorAll(".sekce").forEach(s => {
+        s.style.display = "none";
+    });
+    document.getElementById(id).style.display = "block";
+}
+</script>
+<script>
+        const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.navbar ul');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+     </script>
+     <script src="rezervace.js"></script>
+</body>
+</html>
